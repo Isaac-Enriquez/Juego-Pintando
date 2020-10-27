@@ -50,16 +50,19 @@ def circle(start, end):
 #Esta función crea un rectángulo
 def rectangle(start, end):
     "Draw rectangle from start to end."
-    up()
+    up() 
     goto(start.x, start.y)
     down()
     begin_fill()
     
-    for count in range (2):
-        forward(end.x - start.x)
-        left(90)
-        forward(end.y - start.y)
-        left(90)
+    #Este for avanza la distancia entre clics realizando
+    #una accion espejo donde en un 2 ciclos se gira 90 grados
+    #hasta completar el rectangulo
+    for count in range (2): 
+        forward(end.x - start.x) 
+        left(90) #la flecha se movera 90 grados antihorario
+        forward(end.y - start.y) 
+        left(90) #la flecha vuelve a moverse 90 grados antihorario 
         
     end_fill()
         
@@ -68,13 +71,16 @@ def rectangle(start, end):
 def triangle(start, end):
     "Draw triangle from start to end."
     up()
-    goto(start.x, start.y)
+    goto(start.x, start.y) #mover
     down()
     begin_fill()
 
-    for count in range(3):
+    #En 3 ciclos se dibujara el triangulo, se realizara a la
+    #distancia a la direccion donde se hace el click, complentando
+    #los 120 grados de movimiento hasta cerrar el triangulo
+    for count in range(3): 
         forward(end.x - start.x)
-        left(120)
+        left(120) #120 grados sentido antihorario
         
 
     end_fill()
