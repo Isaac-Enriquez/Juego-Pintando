@@ -53,9 +53,8 @@ def rectangle(start, end):
         forward(end.y - start.y)
         left(90)
         
-    end_fill
+    end_fill()
         
-    pass  # TODO
 
 #Esta función crea un triángulo
 def triangle(start, end):
@@ -71,7 +70,6 @@ def triangle(start, end):
         
 
     end_fill()
-    pass  # TODO
 
 #Esta función guarda la posición inicial cuando haces click
 def tap(x, y):
