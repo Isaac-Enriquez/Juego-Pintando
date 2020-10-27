@@ -39,15 +39,38 @@ def circle(start, end):
     end_fill()
     
 
-
 #Esta función crea un rectángulo
 def rectangle(start, end):
     "Draw rectangle from start to end."
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+    
+    for count in range (2):
+        forward(end.x - start.x)
+        left(90)
+        forward(end.y - start.y)
+        left(90)
+        
+    end_fill
+        
     pass  # TODO
 
 #Esta función crea un triángulo
 def triangle(start, end):
     "Draw triangle from start to end."
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+
+    for count in range(3):
+        forward(end.x - start.x)
+        left(120)
+        
+
+    end_fill()
     pass  # TODO
 
 #Esta función guarda la posición inicial cuando haces click
