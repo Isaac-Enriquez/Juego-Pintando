@@ -1,4 +1,4 @@
-#Isaac Alejandro Enriquez Trejo A00829207
+#A00829207 Isaac Alejandro Enriquez Trejo
 #A00827133 Andrea Fernanda Molina Blandon
 from turtle import *
 from freegames import vector
