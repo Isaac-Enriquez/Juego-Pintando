@@ -1,5 +1,6 @@
 from turtle import *
 from freegames import vector
+import math
 
 #Esta función crea una linea recta
 def line(start, end):
@@ -26,7 +27,18 @@ def square(start, end):
 #Esta función crea un circulo
 def circle(start, end):
     "Draw circle from start to end."
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+
+    for count in range(90):
+        forward( (end.x - start.x)*2*math.pi/90)
+        left(4)
+
+    end_fill()
+    
+
 
 #Esta función crea un rectángulo
 def rectangle(start, end):
